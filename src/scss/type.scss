@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans-Bold.woff2') format('woff2'),
+  url('../fonts/PTSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+  url('../fonts/PTSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+  url('../fonts/OpenSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+html{
+  font-size: 62.5%; // 10px
+  font-family: $font-reg;
+}
+
+body{
+  font-size: 1.6rem;
+  color: $c-gray;
+}
+
+
+.block-heading{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: $c-blue;
+  letter-spacing: -.1rem;
+}
+
+a{
+  color: $c-link;
+}

@@ -1,0 +1,19 @@
+.blue-list{
+  
+  margin-bottom: 80px;
+  
+  &__heading{
+    margin-bottom: 70px;
+  }
+
+  &__items{
+    list-style: none;
+    padding: 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    li{
+      margin-bottom: 19px;
+    }
+  }
+}

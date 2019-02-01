@@ -1,0 +1,67 @@
+.blue-card{
+  padding: 30px 25px 50px;
+  background: #fafafa;
+  height: 100%;
+  
+  &__icon-wrap{
+    margin-bottom: 12px;
+    height: 80px;
+    display: flex;
+  }
+  &__icon{
+    background: url($sprite) no-repeat;
+    margin: auto;
+  }
+  &__icon--blue-scope{
+    background-position: $icon-blue-scope-offset-x $icon-blue-scope-offset-y;
+    height: $icon-blue-scope-height;
+    width: $icon-blue-scope-width;
+  }
+  &__icon--blue-tower{
+    background-position: $icon-blue-tower-offset-x $icon-blue-tower-offset-y;
+    height: $icon-blue-tower-height;
+    width: $icon-blue-tower-width;
+  }
+  &__icon--blue-home{
+    background-position: $icon-blue-home-offset-x $icon-blue-home-offset-y;
+    height: $icon-blue-home-height;
+    width: $icon-blue-home-width;
+  }
+  &__icon--green-doc{
+    background-position: $icon-green-doc-offset-x $icon-green-doc-offset-y;
+    height: $icon-green-doc-height;
+    width: $icon-green-doc-width;
+  }
+
+  &__title{
+    color: $c-blue;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;  
+    letter-spacing: -.1rem;
+    line-height: 1.1;
+  }
+  &__descr{
+    font-size: 1.4rem;
+    line-height: 1.2;
+    letter-spacing: -.04rem;
+  }
+  &__link{
+    text-align: center;
+    margin: 42px auto 0;
+    letter-spacing: -0.05rem;
+    
+    a{
+      display: inline-block;
+      padding: 0 5px;
+      transition: color .2s;
+
+      &:hover{
+        color: $c-black;
+        text-decoration: none;
+      }
+    }
+  }
+  
+}

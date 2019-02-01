@@ -1,0 +1,41 @@
+.page-header{
+  background: $c-blue url("../../images/header-bg.jpg") no-repeat center;
+  height: 500px;
+  margin-bottom: 64px;
+  
+  &__content{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+  }
+  &__heading{
+    font-size: 4.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: $font-head;    
+    letter-spacing: .5rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 4rem;
+    }
+    
+    @include media-breakpoint-down(sm) {
+      font-size: 3rem;
+    }
+  }
+  &__slogan{
+    font-size: 1.8rem;
+    line-height: (30/18);
+    margin: 60px 0 20px;
+    letter-spacing: -.03rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.5rem;
+      margin: 30px 0 20px;
+    }
+  }
+}

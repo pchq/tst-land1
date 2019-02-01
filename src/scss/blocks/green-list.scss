@@ -1,0 +1,41 @@
+.green-list{
+  margin-bottom: 98px;
+
+  &__heading{
+    margin-bottom: 37px;
+  }
+
+  &__descr{
+    color: $c-black;
+    margin-bottom: 50px;
+    letter-spacing: -.04rem;
+  }
+  
+  &__items{
+    list-style: none;
+    padding: 0;
+    color: $c-black;
+  }
+    
+  &__btn-wrap{
+    text-align: center;
+    margin-top: 50px;
+    
+    button{
+      border: 1px solid $c-green;
+      background: #fff;
+      color: $c-blue;
+      border-radius: 4px;
+      padding: 13px 10px;
+      min-width: 215px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all .2s;
+      
+      &:hover{
+        background: $c-green;
+        color: #fff;
+      }
+    }
+  }
+}

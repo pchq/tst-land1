@@ -1,0 +1,39 @@
+.social{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  
+  
+  &__item{
+    display: inline-block;
+    
+    & + & {
+      margin-left: 30px;
+    }
+  }
+  &__link{
+    background: url($sprite) no-repeat;
+    height: 53px;
+    width: 54px;
+    display: block;
+    transition: opacity .2s;
+    mix-blend-mode: screen;
+    
+    &:hover{
+      opacity: .8;
+    }
+  }
+  &__link--fb{
+      background-position: $social-fb-offset-x $social-fb-offset-y;
+  }
+  &__link--tw{
+    background-position: $social-tw-offset-x $social-tw-offset-y;
+  }
+  &__link--inst{
+    background-position: $social-inst-offset-x $social-inst-offset-y;
+  }
+  
+}

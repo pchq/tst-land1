@@ -1,0 +1,28 @@
+.footer-nav{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  
+  &__item{
+    margin: 0 16px;
+
+    
+    a{
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      letter-spacing: -.08rem;
+
+      &:hover{
+        background: rgba(#000, .1);
+      }
+    }
+  }
+}

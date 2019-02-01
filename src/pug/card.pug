@@ -1,0 +1,10 @@
+mixin card(data, className)
+        
+    div(class=`${className}`)
+        div(class=`${className}__icon-wrap`)
+            div(class=`${className}__icon ${className}__icon--${data.icon} `)
+        div(class=`${className}__title`) #{data.title}
+        div(class=`${className}__descr`) #{data.descr}
+        if data.link
+            div(class=`${className}__link`)
+                a(href=`${data.link}` title='Learn More') Learn More

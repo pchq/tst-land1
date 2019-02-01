@@ -1,0 +1,66 @@
+.green-card{
+  padding: 30px 25px 40px;
+  
+  &__icon-wrap{
+    margin-bottom: 16px;
+    height: 80px;
+    display: flex;
+  }
+  &__icon{
+    background: url($sprite) no-repeat;
+    margin: auto;
+  }
+
+  &__icon--green-doc{
+    background-position: $icon-green-doc-offset-x $icon-green-doc-offset-y;
+    height: $icon-green-doc-height;
+    width: $icon-green-doc-width;
+  }
+  
+  &__icon--green-doc-search{
+    background-position: $icon-green-doc-search-offset-x $icon-green-doc-search-offset-y;
+    height: $icon-green-doc-search-height;
+    width: $icon-green-doc-search-width;
+  }
+  &__icon--green-folder{
+    background-position: $icon-green-folder-offset-x $icon-green-folder-offset-y;
+    height: $icon-green-folder-height;
+    width: $icon-green-folder-width;
+  }
+  &__icon--green-safe{
+    background-position: $icon-green-safe-offset-x $icon-green-safe-offset-y;
+    height: $icon-green-safe-height;
+    width: $icon-green-safe-width;
+  }
+  &__icon--green-scheme{
+    background-position: $icon-green-scheme-offset-x $icon-green-scheme-offset-y;
+    height: $icon-green-scheme-height;
+    width: $icon-green-scheme-width;
+  }
+  &__icon--green-time{
+    background-position: $icon-green-time-offset-x $icon-green-time-offset-y;
+    height: $icon-green-time-height;
+    width: $icon-green-time-width;
+  }
+  
+  &__title{
+    color: $c-blue;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -.05rem;
+    line-height: 1.1;
+  }
+  &__descr{
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+  &__link{
+    text-align: center;
+    margin-top: 45px;
+  }
+  
+}

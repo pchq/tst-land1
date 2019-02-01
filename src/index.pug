@@ -1,0 +1,82 @@
+include data
+include pug/card
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width")
+		title Landing Page
+		link(rel="stylesheet" href=`${filesPath}assets/css/style.min.css?v=${Date.now()}`)
+		
+	body
+		header.page-header
+			.container
+				include pug/navbar
+				.page-header__content
+					h1.page-header__heading We solve <br> your problems
+					.page-header__slogan
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec accumsan velit. <br>
+						| Ut gravida id sem id sodales. Aenean quis enim dui. Vestibulum ullamcorper vel urna quis congue.
+					
+		main.container
+			section.blue-list
+				h2.block-heading.blue-list__heading Etiam ac nisl ac quam sodales scelerisque elementum quis purus.
+				ul.blue-list__items.row.justify-content-center
+					each item in list1
+						li.col-12.col-sm-6.col-md-4
+							+card(item, 'blue-card')
+							
+			section.green-list
+				h2.block-heading.green-list__heading Lorem ipsum
+				p.green-list__descr
+					| nteger bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae est. 
+					| Morbi facilisis mi non iaculis porttitor. Phasellus a nibh a lacus dignissim pharetra. 
+					| Vivamus ullamcorper finibus mauris, sit amet volutpat enim sollicitudin sed.
+				ul.green-list__items.row
+					each item in list2
+						li.col-12.col-sm-6.col-md-4
+							+card(item, 'green-card')
+						
+				div.green-list__btn-wrap
+					button(role='button') View All Our Products
+					
+			section.partners
+				h3.block-heading.partners__heading Wordlwide recognition
+				p.partners__short-descr
+					| Integer bibendum turpis sit amet pretium commodo. 
+					| Cras justo elit, dapibus at viverra non, dapibus vitae est.
+				p.partners__full-descr
+					| Fusce pretium enim sit amet elementum eleifend. Quisque at dui nunc. Curabitur sodales, turpis at 
+					| luctus suscipit, nisl leo dignissim turpis, quis blandit justo nulla sed nisi. 
+					| Vivamus urna eros, malesuada non massa sed, vestibulum maximus dui. Fusce facilisis nunc a urna 
+					| lacinia, nec sagittis felis efficitur. Phasellus commodo porttitor odio, eu commodo nisi vehicula ut. 
+					| Maecenas congue nisi lorem, et maximus ante vestibulum eu. Vivamus non imperdiet ex.
+				ul.partners__list
+					each item in partners
+						li
+							img(src=`${filesPath}images/${item.img}` alt=`${item.name}` title=`${item.name}`)
+							
+		foorer.page-footer
+			.container
+				ul.footer-nav
+					li.footer-nav__item
+						a(href='#' title='Privacy policy') Privacy policy
+					li.footer-nav__item
+						a(href='#' title='About us') About us
+					li.footer-nav__item
+						a(href='#' title='Support') Support
+				
+				ul.social
+					li.social__item
+						a(class='social__link social__link--fb' href='#' title='Facebook')
+					li.social__item
+						a(class='social__link social__link--tw' href='#' title='Twitter')
+					li.social__item
+						a(class='social__link social__link--inst' href='#' title='Instagram')
+						
+				div.page-footer__copyright Copyright &copy; 1998 – 2016
+		
+		
+		script(src=`${filesPath}assets/js/script.min.js?v=${Date.now()}`)
+					

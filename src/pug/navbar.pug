@@ -1,0 +1,34 @@
+nav.navbar
+    a.navbar__brand(href='#')
+        img.navbar__brand-logo(src=`${filesPath}images/logo.png`)
+        span.navbar__brand-name
+            span Company
+            span Name
+            
+    .navbar__menu.js-menu-container
+        ul.navbar__list
+            li.navbar__item.navbar__item--dropdown
+                a(href='#') Products
+                    span.navbar__dropdown-chevron
+                ul.navbar__secondary
+                    li.navbar__second-item
+                        a(href='#') Product 1
+                    li.navbar__second-item
+                        a(href='#') Product 2
+            li.navbar__item
+                a(href='#') News & Events 
+            li.navbar__item
+                a(href='#') Support
+            li.navbar__item
+                a(href='#') Contacts
+
+        ul.navbar__list
+            li.navbar__item
+                a(href='#') Login
+            li.navbar__item
+                a(href='#') Buy Now
+    
+    .burger.js-menu-btn
+        .burger__box
+            .burger__inner
+                
